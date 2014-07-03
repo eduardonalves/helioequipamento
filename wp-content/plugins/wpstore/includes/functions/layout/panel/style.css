@@ -1,0 +1,282 @@
+﻿body {  background:#fff; font-size:12px; 	font-family:'Open Sans', sans-serif; color:#aaa; }
+
+
+a { color:#173257;  text-decoration:none;  }
+a:hover { color:#a2a2a2;  }
+
+
+p { line-height:1.4em;  }
+
+
+img { max-width:100%; }
+input { border:none; }
+li { list-style-type:none; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin-bottom: 10px;
+	font-family:'Open Sans', sans-serif;
+	color:#666;
+}
+
+h1 {font-size: 26px;}
+h2 {font-size: 24px;}
+h3 {font-size: 22px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+
+.clear, .fix { clear:both; }
+
+.lf { float:left; }
+.lr { float:right; }
+
+.botao { font-family:'Open Sans', sans-serif;border:1px solid #d3d3d3; color:#333; display:block;  text-align:center; padding:0 5px; background:#fbfbfb; width:75px; margin:0 auto; height:32px; line-height:32px;  
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);  
+-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-radius: 5px;
+ }
+.botao:hover { color:#000; background:#f4f6fc; }
+
+
+.arrend {
+-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-radius: 5px;
+}
+
+
+.gradient { 
+background-image: linear-gradient(bottom, #EEEEEE 25%, #FFFFFF 63%);
+background-image: -o-linear-gradient(bottom, #EEEEEE 25%, #FFFFFF 63%);
+background-image: -moz-linear-gradient(bottom, #EEEEEE 25%, #FFFFFF 63%);
+background-image: -webkit-linear-gradient(bottom, #EEEEEE 25%, #FFFFFF 63%);
+background-image: -ms-linear-gradient(bottom, #EEEEEE 25%, #FFFFFF 63%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, #EEEEEE),
+	color-stop(0.63, #FFFFFF)
+);
+}
+
+.container { max-width:840px; margin:0 auto; }
+
+#panel { width:100%; margin-top:50px;   }
+
+
+
+/*lateral*/
+#lateral { width:200px; float:left; background:#173257; min-height:400px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2); 
+ }
+ 
+#lateral .logo {  padding:15px; }
+
+#lateral .menu { }
+#lateral .menu li { margin-left:10px; margin-bottom:5px;}
+#lateral .menu li a { display:block; font-size:0.9em; color:#fff; padding:5px 0 5px 5px; border-bottom:1px solid #2b4a73; }
+
+
+#lateral .menu li a.current,
+#lateral .menu li a:hover
+ {
+  background:#d7e5ee; color:#333;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2); 
+}
+ 
+ 
+
+
+/*lateral*/
+
+
+
+
+/*opcoes*/
+#opcoes { width:620px; background:#d7e5ee; border:1px solid #d3d3d3; float:left;
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2); 
+ }
+
+#opcoes .botaoSalvar { float:right; margin:20px 35px 20px 0;  }
+/*opcoes*/
+
+
+
+
+/*abas*/
+
+.TabControl{  min-height:350px; margin:10px 0 0 10px; }
+.TabControl #cabecalho{ }
+
+.TabControl #containerAbas{  position:relative; z-index:99; margin-top:-34px; width:90%; background:#f4f6fc;  padding:20px 20px 30px 20px; border:1px solid #d3d3d3; border-top:none;  overflow:hidden; height:85%;
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);  
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+ }
+ 
+ 
+.TabControl .conteudo{ color:#333;}
+.TabControl .conteudo .bloco { position:relative;  border:1px solid #d3d3d3;  background:#fff; margin-bottom:20px; }
+.TabControl .conteudo .bloco h3 { border-bottom:1px solid #d3d3d3; color:#fff; background:#666; padding:10px 20px; font-size:1.2em; margin:0; }
+
+.TabControl .conteudo .bloco h4 { border-top:3px solid #173257; color:#173257;  padding:3px 0; font-size:1.1em; }
+
+
+
+.TabControl .conteudo .bloco .seta { cursor:pointer; display:block; width:15px; height:15px;z-index:9999; position:absolute; right:12px; top:12px; background:url(images/seta.png) no-repeat; }
+.TabControl .conteudo .bloco .setaSobe {  background:url(images/setaSobe.png) no-repeat; }
+
+.TabControl .conteudo .bloco .texto { display:none; padding:15px  20px 10px 20px; }
+.TabControl .conteudo .bloco .texto p { font-family:Arial; font-size:1em;  }
+.TabControl .conteudo .bloco .texto ul { margin-left:-20px; font-family:Arial; font-size:1em;  }
+.TabControl .conteudo .bloco .texto dl { font-family:Arial; font-size:1em;  }
+.TabControl .conteudo .bloco .texto dl dt {float:left; width:120px; }
+.TabControl .conteudo .bloco .texto dl dd {float:left;  }
+
+.TabControl .conteudo .bloco .texto hr { height:1px; border:none; border-top:1px solid #d3d3d3; margin:30px 0; }
+
+
+.TabControl .conteudo .bloco .texto select { border:1px solid #d3d3d3; width:250px; height:30px;
+-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-radius: 5px;
+ }
+.TabControl .conteudo .bloco .texto label { margin-right:5px; }
+.TabControl .conteudo .bloco .texto input[type="text"],
+.TabControl .conteudo .bloco .texto textarea { padding-left:5px; color:#666; font-size:0.9em; border:1px solid #d3d3d3; width:250px; height:30px; 
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);  
+-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-radius: 5px;
+}
+.TabControl .conteudo .bloco .texto textarea {  height:100px; }
+
+.TabControl .conteudo   input[type="submit"] { cursor:pointer;  border:1px solid #d3d3d3; width:70px; height:34px;
+-webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);  
+-webkit-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-radius: 5px;
+ }
+          
+.controleStatus { float:right}
+.controleStatus a { padding:10px;background:#eee;color:red; margin-left:10px;border:1px #ccc solid; }
+.controleStatus a:hover { background:#ddd;color:black}  
+
+.TabControl .conteudo .bloco .texto .botoes { float:right;}
+
+
+.TabControl .abas{display:inline;cursor:pointer;  }
+.TabControl .abas li{float:left;}
+
+.aba{ 	width:100px; margin-right:4px;  height:25px; border:1px solid #d3d3d3; border-radius:5px 5px 0 0; text-align:center; padding-top:6px;  color:#000; }
+.ativa{width:100px; height:25px; border:1px solid #d3d3d3; border-radius:5px 5px 0 0; text-align:center; padding-top:6px; background:#27408B;}
+.ativa span, .selected span{color:#333; font-weight:bold;}
+
+.aba:hover { background:#f4f6fc; }
+
+.selected{ position:relative; z-index:999; width:100px; height:25px; border:1px solid #d3d3d3; border-bottom:none;  border-radius:5px 5px 0 0; text-align:center; padding-top:6px; background:#f4f6fc;  }
+
+/*abas*/
+
+
+
+
+/*tabela*/
+
+table {
+  border-collapse: collapse;
+  width:100%;
+  font: normal 11px verdana, arial, helvetica, sans-serif;
+  color: #333;
+  background: #d7e5ee;
+  }
+caption {
+  text-align: left;
+  background: transparent;
+  color:#333; margin-bottom:20px;
+  }
+td, th {
+  border: 1px dashed #d3d3d3;
+  padding: .8em;
+  }
+thead th, tfoot th {
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  background: #173257;
+  color: #F6ECF0;
+  padding-top:6px;
+  }
+tbody th, tbody td {
+  vertical-align: top;
+  text-align: center;
+  }
+ 
+th.prod, td.prod {
+ width:60%; text-align:left;
+ }
+tfoot td {
+  border: 1px solid #38160C;
+  background: #38160C;
+  padding-top:6px;
+  }
+.odd {
+  background: #f4f6fc;
+  }
+tbody tr:hover {
+  background: #efefef;
+  }
+tbody tr:hover th,
+tbody tr.odd:hover th {
+  background: #efefef;
+  }
+
+/*tabela*/
+

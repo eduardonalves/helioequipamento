@@ -1,0 +1,801 @@
+***********************************************
+2012-11-20 17:02:57:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="0be69e5fb408c804723c467fe1759487" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>4059357</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T17:02:57</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>0</autorizar>
+   <capturar>true</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 17:02:58:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="0be69e5fb408c804723c467fe1759487" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7091001</tid>
+  <dados-pedido>
+    <numero>4059357</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T17:00:53.319-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=8ce7d4d174201b53af2e7c4199b666cf</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 17:29:45:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/retorno.php
+OPERAÇÃO: Consulta
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-consulta id="8fadad68d96b680e4643e081954da168" versao="1.1.0">
+   <tid>100173489808E7091001</tid>
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+</requisicao-consulta>
+
+***********************************************
+2012-11-20 17:29:46:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/retorno.php
+OPERAÇÃO: Consulta
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="8fadad68d96b680e4643e081954da168" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7091001</tid>
+  <dados-pedido>
+    <numero>4059357</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T17:00:53.319-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Cancelamento por timeout do usuario</mensagem>
+    <data-hora>2012-11-20T17:06:49.538-02:00</data-hora>
+    <valor>10000</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2012-11-20 17:31:00:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/operacao.php
+OPERAÇÃO: Autorizacao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-tid id="32982db3c52c3015935b8bd2b04868b7" versao="1.1.0">
+  <tid>100173489808E7091001</tid>
+  <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+</requisicao-autorizacao-tid>
+
+***********************************************
+2012-11-20 17:31:00:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/operacao.php
+OPERAÇÃO: Autorizacao Tid
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>020</codigo><mensagem>O status 'Cancelada' não permite autorização.</mensagem></erro>
+
+
+***********************************************
+2012-11-20 17:31:07:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/operacao.php
+OPERAÇÃO: Captura
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-captura id="919be4e05e62bf46740f395ec4d162ab" versao="1.1.0">
+   <tid>100173489808E7091001</tid>
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <valor>10000</valor>
+</requisicao-captura>
+
+***********************************************
+2012-11-20 17:31:08:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/operacao.php
+OPERAÇÃO: Captura
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<erro xmlns="http://ecommerce.cbmp.com.br"><codigo>030</codigo><mensagem>O status 'Cancelada' não permite captura.</mensagem></erro>
+
+
+***********************************************
+2012-11-20 17:31:40:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="4fb9fc8ba0fa5243502db50edcc8ac35" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>7405362</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T17:31:40</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>1</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 17:31:41:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="4fb9fc8ba0fa5243502db50edcc8ac35" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7261001</tid>
+  <dados-pedido>
+    <numero>7405362</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T17:29:36.203-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=55fe40619a8f056ce282aa463887402b</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 17:32:39:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/retorno.php
+OPERAÇÃO: Consulta
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-consulta id="f9cbe5390d253b45548f10dbeade3ca7" versao="1.1.0">
+   <tid>100173489808E7261001</tid>
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+</requisicao-consulta>
+
+***********************************************
+2012-11-20 17:32:39:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/retorno.php
+OPERAÇÃO: Consulta
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="f9cbe5390d253b45548f10dbeade3ca7" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7261001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>7405362</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T17:29:36.203-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>4</status>
+  <autenticacao>
+    <codigo>4</codigo>
+    <mensagem>Autenticada com sucesso</mensagem>
+    <data-hora>2012-11-20T17:30:33.889-02:00</data-hora>
+    <valor>10000</valor>
+    <eci>5</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>4</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2012-11-20T17:30:33.902-02:00</data-hora>
+    <valor>10000</valor>
+    <lr>00</lr>
+    <arp>123456</arp>
+  </autorizacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 17:33:03:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/operacao.php
+OPERAÇÃO: Consulta
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-consulta id="0b3862020a6ae6ad330bf4f627464a2a" versao="1.1.0">
+   <tid>100173489808E7261001</tid>
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+</requisicao-consulta>
+
+***********************************************
+2012-11-20 17:33:03:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/operacao.php
+OPERAÇÃO: Consulta
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="0b3862020a6ae6ad330bf4f627464a2a" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7261001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>7405362</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T17:29:36.203-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>4</status>
+  <autenticacao>
+    <codigo>4</codigo>
+    <mensagem>Autenticada com sucesso</mensagem>
+    <data-hora>2012-11-20T17:30:33.889-02:00</data-hora>
+    <valor>10000</valor>
+    <eci>5</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>4</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2012-11-20T17:30:33.902-02:00</data-hora>
+    <valor>10000</valor>
+    <lr>00</lr>
+    <arp>123456</arp>
+  </autorizacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 18:59:46:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="8514eb4d9760a3bce40a4186e2f15683" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>9861662</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T18:59:46</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 18:59:46:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="8514eb4d9760a3bce40a4186e2f15683" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E73E1001</tid>
+  <dados-pedido>
+    <numero>9861662</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T18:57:40.202-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=cc1d4b3c328dcae940b03c17d0cd65d3</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 18:59:54:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="c2b26cf089b255bd727c74d56c4baa00" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1869009</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T18:59:54</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 18:59:54:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="c2b26cf089b255bd727c74d56c4baa00" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E73F1001</tid>
+  <dados-pedido>
+    <numero>1869009</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T18:57:48.125-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=084894327f71ca3fd74dab7b8f9e6496</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 18:59:59:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="c0fd45d10559aacabe7a4d5b8d5d9866" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>4120982</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T18:59:59</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 18:59:59:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="c0fd45d10559aacabe7a4d5b8d5d9866" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7401001</tid>
+  <dados-pedido>
+    <numero>4120982</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T18:57:53.585-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=7f2ad5c2b4a1ddf82e624a28cf65fc67</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 19:17:50:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="c52ece144b118fcafccacc7a4f11383e" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>4644997</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T19:17:50</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 19:17:50:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="c52ece144b118fcafccacc7a4f11383e" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7431001</tid>
+  <dados-pedido>
+    <numero>4644997</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T19:15:44.075-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=6ef3fb407bbcc34fbff70d6e2171fae4</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 19:18:09:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="ae6c74be21c5ede936bcbcccba87e454" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1984179</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T19:18:09</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 19:18:09:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="ae6c74be21c5ede936bcbcccba87e454" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7441001</tid>
+  <dados-pedido>
+    <numero>1984179</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T19:16:03.411-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=fba91657daeba341e4e87c80fc7d26ec</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 19:43:22:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="e8e2053a8120034e7d512e6610fa1b4b" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>3412731</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T19:43:22</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 19:43:22:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="e8e2053a8120034e7d512e6610fa1b4b" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7461001</tid>
+  <dados-pedido>
+    <numero>3412731</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T19:41:16.226-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=d45982329884e23f5e3be74ad2926a12</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 19:43:31:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="0fd70c2651c9353bb940ddccd0cf0c6d" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>3336195</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T19:43:31</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 19:43:31:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="0fd70c2651c9353bb940ddccd0cf0c6d" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7471001</tid>
+  <dados-pedido>
+    <numero>3336195</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T19:41:25.283-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=e1b39195b9a1b3d02ec4dbb36a61082d</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 19:43:37:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="bb69245bfa7cc01f4b2bdcc0fa706ec2" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>5905489</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T19:43:37</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 19:43:37:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="bb69245bfa7cc01f4b2bdcc0fa706ec2" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7481001</tid>
+  <dados-pedido>
+    <numero>5905489</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T19:41:30.664-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=b75f617d1b885b3da4340ea6d110afbc</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 19:43:40:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="04d2c57e2d5b89437af6d613930633c5" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>8868000</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T19:43:40</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 19:43:41:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="04d2c57e2d5b89437af6d613930633c5" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7491001</tid>
+  <dados-pedido>
+    <numero>8868000</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T19:41:34.521-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=e47e687c971be6ab00487568e37b4d20</url-autenticacao>
+</transacao>
+
+
+***********************************************
+2012-11-20 20:11:13:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="60bb371ea16ddc8a1ebeccb589b852b3" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>3921937</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2012-11-20T20:11:13</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojacielo/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2012-11-20 20:11:13:000000 (BRST)
+DO ARQUIVO: /lojacielo/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.0" id="60bb371ea16ddc8a1ebeccb589b852b3" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100173489808E7501001</tid>
+  <dados-pedido>
+    <numero>3921937</numero>
+    <valor>10000</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-11-20T20:09:06.912-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=57dcac74ffa362146378f8ee099a7314</url-autenticacao>
+</transacao>
+
+

@@ -1,0 +1,33 @@
+**********************************************************
+256 ERRO NA TRANSACAO - 2012-11-20 17:31:00 (BRST)
+     ARQUIVO: /Applications/XAMPP/xamppfiles/htdocs/lojacielo/includes/errorHandling.php(Linha 64)
+     MENSAGEM: 
+     Código do erro: 020
+     Mensagem: O status 'Cancelada' não permite autorização.
+     XML de envio: 
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-tid id="32982db3c52c3015935b8bd2b04868b7" versao="1.1.0">
+  <tid>100173489808E7091001</tid>
+  <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+</requisicao-autorizacao-tid>
+
+**********************************************************
+256 ERRO NA TRANSACAO - 2012-11-20 17:31:08 (BRST)
+     ARQUIVO: /Applications/XAMPP/xamppfiles/htdocs/lojacielo/includes/errorHandling.php(Linha 64)
+     MENSAGEM: 
+     Código do erro: 030
+     Mensagem: O status 'Cancelada' não permite captura.
+     XML de envio: 
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-captura id="919be4e05e62bf46740f395ec4d162ab" versao="1.1.0">
+   <tid>100173489808E7091001</tid>
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <valor>10000</valor>
+</requisicao-captura>
+
