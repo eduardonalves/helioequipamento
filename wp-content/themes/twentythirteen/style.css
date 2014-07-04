@@ -785,6 +785,7 @@ img.wp-smiley,
 
 .site-main {
 	position: relative;
+	margin-left: 100px;
 }
 
 .site-main .sidebar-container {
@@ -880,6 +881,9 @@ div.nav-menu > ul {
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
+	margin-left: -3px;
+	width: 150px;
+	text-align: center;
 }
 
 
@@ -891,7 +895,8 @@ div.nav-menu > ul {
     background: -o-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(180deg, white, rgb(192, 187, 187)); /* Standard syntax (must be last) */
-	color: #fff;
+	color: #1123F3;
+	
 }
 
 .nav-menu .sub-menu,
@@ -944,7 +949,11 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #bc360a;
+	color: #1B8507;
+	background: -webkit-linear-gradient(180deg, rgb(192, 187, 187), white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, rgb(192, 187, 187), white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, rgb(192, 187, 187), white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, rgb(192, 187, 187), white); /* Standard syntax (must be last) */
 	font-style: italic;
 	
 }
@@ -956,8 +965,8 @@ ul.nav-menu .focus > ul,
 /* Navbar */
 .navbar {
 	background-color: #f6f6f6;
-	max-width: 770px;
-	width: 100%;
+	max-width: 800px;
+	width: auto;
 	margin-left: 12%;
 	margin-top: -20px;
 	border-top-right-radius: 2em;
@@ -1234,7 +1243,7 @@ footer.entry-meta {
 
 /* Mediaelements */
 .hentry .mejs-mediaelement,
-.hentry .mejs-container .mejs-controls {
+.hentry .mejs- .mejs-controls {
 	background: #220e10;
 }
 
@@ -2444,7 +2453,15 @@ footer.entry-meta {
 	width: 300px;
 }
 
+.site-main .widget-area-left {
+	float: left;
+	width: 220px;
+	margin: 40px 0px 0px 0px;
+}
 
+.site-main .widget-area-left .widget-title{
+	
+}
 /**
  * 6.1 Widgets
  * ----------------------------------------------------------------------------
@@ -2787,7 +2804,8 @@ footer.entry-meta {
 		position: relative;
 		top: 20px;
 	}
-
+	
+	
 	.site-main .widget-area {
 		float: none;
 		margin: 0;
