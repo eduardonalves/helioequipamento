@@ -866,6 +866,11 @@ div.nav-menu > ul {
 .nav-menu li {
 	display: inline-block;
 	position: relative;
+	border-right: 1px solid rgb(216, 200, 200);
+}
+
+.nav-menu li:last-child{
+	border-right: none;
 }
 
 .nav-menu li a {
@@ -875,19 +880,18 @@ div.nav-menu > ul {
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
-	border-right: 1px solid rgb(216, 200, 200);
 }
+
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background: -webkit-linear-gradient(180deg, white, gray); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(180deg, white, gray); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg, white, gray); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, white, gray); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, white, rgb(192, 187, 187)); /* Standard syntax (must be last) */
 	color: #fff;
-	border-right: 1px solid rgb(216, 200, 200);
 }
 
 .nav-menu .sub-menu,
@@ -942,7 +946,7 @@ ul.nav-menu .focus > ul,
 .nav-menu .current-menu-ancestor > a {
 	color: #bc360a;
 	font-style: italic;
-	border-right: 1px solid rgb(216, 200, 200);
+	
 }
 
 .menu-toggle {
