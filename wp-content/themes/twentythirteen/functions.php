@@ -226,6 +226,19 @@ add_filter( 'wp_title', 'twentythirteen_wp_title', 10, 2 );
  *
  * @since Twenty Thirteen 1.0
  */
+ 
+function teceiro_widget() {
+	
+		register_sidebar( array(
+		'name'          => __( 'Terceira barra lateral', 'twentythirteen' ),
+		'id'            => 'sidebar-4',
+		'description'   => __( 'Terceira área de Widgts.', 'twentythirteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+}
 function twentythirteen_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Main Widget Area', 'twentythirteen' ),
@@ -246,9 +259,11 @@ function twentythirteen_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	
 }
-add_action( 'widgets_init', 'twentythirteen_widgets_init' );
-
+	add_action( 'widgets_init', 'twentythirteen_widgets_init' );
+	add_action( 'widgets_init', 'teceiro_widget' );
+	
 if ( ! function_exists( 'twentythirteen_paging_nav' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
@@ -480,7 +495,8 @@ function twentythirteen_body_class( $classes ) {
 
 	if ( is_active_sidebar( 'sidebar-2' ) && ! is_attachment() && ! is_404() )
 		$classes[] = 'sidebar';
-
+	 
+	
 	if ( ! get_option( 'show_avatars' ) )
 		$classes[] = 'no-avatars';
 

@@ -49,3 +49,4 @@
 		</header><!-- #masthead -->
 
 		<div id="main" class="site-main">
+		<?php get_sidebar( 'terceiro' ); ?>

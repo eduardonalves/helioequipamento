@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * The sidebar containing the secondary widget area
@@ -20,3 +22,4 @@ if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 		</div><!-- .sidebar-inner -->
 	</div><!-- #tertiary -->
 <?php endif; ?>
+
