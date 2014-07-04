@@ -875,14 +875,19 @@ div.nav-menu > ul {
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
+	border-right: 1px solid rgb(216, 200, 200);
 }
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background-color: #220e10;
+	background: -webkit-linear-gradient(180deg, white, gray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, white, gray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, white, gray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, white, gray); /* Standard syntax (must be last) */
 	color: #fff;
+	border-right: 1px solid rgb(216, 200, 200);
 }
 
 .nav-menu .sub-menu,
@@ -937,6 +942,7 @@ ul.nav-menu .focus > ul,
 .nav-menu .current-menu-ancestor > a {
 	color: #bc360a;
 	font-style: italic;
+	border-right: 1px solid rgb(216, 200, 200);
 }
 
 .menu-toggle {
@@ -945,16 +951,20 @@ ul.nav-menu .focus > ul,
 
 /* Navbar */
 .navbar {
-	background-color: #f7f5e7;
-	margin: 0 auto;
-	max-width: 1600px;
+	background-color: #f6f6f6;
+	max-width: 770px;
 	width: 100%;
+	margin-left: 12%;
+	margin-top: -20px;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	box-shadow: 5px 5px 10px gray;
 }
 
 .site-header .search-form {
 	position: absolute;
-	right: 20px;
-	top: 1px;
+	right: 200px;
+	top: 10px;
 }
 
 .site-header .search-field {
