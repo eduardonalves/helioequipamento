@@ -27,7 +27,7 @@ function twentythirteen_custom_header_setup() {
 		'default-image'          => '%s/images/headers/circle.png',
 
 		// Set height and width, with a maximum value for the width.
-		'height'                 => 230,
+		'height'                 => 120,
 		'width'                  => 1600,
 
 		// Callbacks for styling the header and the admin preview.
@@ -99,7 +99,7 @@ function twentythirteen_header_style() {
 	?>
 		.site-header {
 			background: url(<?php header_image(); ?>) no-repeat scroll top;
-			background-size: 1600px auto;
+			background-size: 1600px 120px;
 		}
 	<?php
 		endif;

@@ -820,7 +820,7 @@ img.wp-smiley,
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
-	min-height: 230px;
+	min-height: 120px;
 	padding: 0 20px;
 	text-decoration: none;
 	width: 100%;
@@ -945,10 +945,12 @@ ul.nav-menu .focus > ul,
 
 /* Navbar */
 .navbar {
-	background-color: #f7f5e7;
-	margin: 0 auto;
-	max-width: 1600px;
-	width: 100%;
+
+	background-color: #f6f6f6;
+	width: auto;
+	border-bottom: 1px solid #A39E9E;
+
+
 }
 
 .site-header .search-form {
@@ -2428,6 +2430,13 @@ footer.entry-meta {
 .site-main .widget-area {
 	float: right;
 	width: 300px;
+}
+
+
+.site-main .widget-area-left {
+	float: left;
+	width: 220px;
+	margin: 40px 0px 0px -40px;
 }
 
 
