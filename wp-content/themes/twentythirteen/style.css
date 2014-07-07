@@ -785,7 +785,6 @@ img.wp-smiley,
 
 .site-main {
 	position: relative;
-	margin-left: 100px;
 }
 
 .site-main .sidebar-container {
@@ -867,11 +866,6 @@ div.nav-menu > ul {
 .nav-menu li {
 	display: inline-block;
 	position: relative;
-	border-right: 1px solid rgb(216, 200, 200);
-}
-
-.nav-menu li:last-child{
-	border-right: none;
 }
 
 .nav-menu li a {
@@ -881,22 +875,14 @@ div.nav-menu > ul {
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
-	margin-left: -3px;
-	width: 150px;
-	text-align: center;
 }
-
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background: -webkit-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg, white, rgb(192, 187, 187)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, white, rgb(192, 187, 187)); /* Standard syntax (must be last) */
-	color: #1123F3;
-	
+	background-color: #220e10;
+	color: #fff;
 }
 
 .nav-menu .sub-menu,
@@ -949,13 +935,8 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #1B8507;
-	background: -webkit-linear-gradient(180deg, rgb(192, 187, 187), white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(180deg, rgb(192, 187, 187), white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg, rgb(192, 187, 187), white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, rgb(192, 187, 187), white); /* Standard syntax (must be last) */
+	color: #bc360a;
 	font-style: italic;
-	
 }
 
 .menu-toggle {
@@ -964,20 +945,16 @@ ul.nav-menu .focus > ul,
 
 /* Navbar */
 .navbar {
-	background-color: #f6f6f6;
-	max-width: 800px;
-	width: auto;
-	margin-left: 12%;
-	margin-top: -20px;
-	border-top-right-radius: 2em;
-	border-bottom-right-radius: 2em;
-	box-shadow: 5px 5px 10px gray;
+	background-color: #f7f5e7;
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
 }
 
 .site-header .search-form {
 	position: absolute;
-	right: 200px;
-	top: 10px;
+	right: 20px;
+	top: 1px;
 }
 
 .site-header .search-field {
@@ -1243,7 +1220,7 @@ footer.entry-meta {
 
 /* Mediaelements */
 .hentry .mejs-mediaelement,
-.hentry .mejs- .mejs-controls {
+.hentry .mejs-container .mejs-controls {
 	background: #220e10;
 }
 
@@ -2453,15 +2430,7 @@ footer.entry-meta {
 	width: 300px;
 }
 
-.site-main .widget-area-left {
-	float: left;
-	width: 220px;
-	margin: 40px 0px 0px 0px;
-}
 
-.site-main .widget-area-left .widget-title{
-	
-}
 /**
  * 6.1 Widgets
  * ----------------------------------------------------------------------------
@@ -2804,8 +2773,7 @@ footer.entry-meta {
 		position: relative;
 		top: 20px;
 	}
-	
-	
+
 	.site-main .widget-area {
 		float: none;
 		margin: 0;
