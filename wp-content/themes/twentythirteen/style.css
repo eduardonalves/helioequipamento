@@ -951,12 +951,11 @@ ul.nav-menu .focus > ul,
 	border-bottom: 1px solid #A39E9E;
 }
 
+
 .site-header .search-form {
 	position: absolute;
-
 	right: 20px;
 	top: 1px;
-
 }
 
 .site-header .search-field {
