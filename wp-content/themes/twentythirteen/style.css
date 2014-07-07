@@ -866,6 +866,8 @@ div.nav-menu > ul {
 .nav-menu li {
 	display: inline-block;
 	position: relative;
+	border-left: 1px solid #A39E9E;
+	margin-right: -4px;
 }
 
 .nav-menu li a {
@@ -881,7 +883,10 @@ div.nav-menu > ul {
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background-color: #220e10;
+	background: -webkit-linear-gradient(180deg, white, rgb(158, 155, 155)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(180deg, white, rgb(158, 155, 155)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(180deg, white, rgb(158, 155, 155)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(180deg, white, rgb(158, 155, 155)); /* Standard syntax */
 	color: #fff;
 }
 
@@ -918,7 +923,11 @@ ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover,
 ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
-	background-color: #db572f;
+	background: -webkit-linear-gradient(180deg, rgb(158, 155, 155), white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(180deg, rgb(158, 155, 155), white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(180deg, rgb(158, 155, 155), white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(180deg, rgb(158, 155, 155), white);
+
 }
 
 ul.nav-menu li:hover > ul,
@@ -935,8 +944,12 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #bc360a;
+	color: #ff0000;
 	font-style: italic;
+	background: -webkit-linear-gradient(180deg, rgb(158, 155, 155), white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(180deg, rgb(158, 155, 155), white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(180deg, rgb(158, 155, 155), white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(180deg, rgb(158, 155, 155), white);
 }
 
 .menu-toggle {
@@ -954,8 +967,8 @@ ul.nav-menu .focus > ul,
 
 .site-header .search-form {
 	position: absolute;
-	right: 20px;
-	top: 1px;
+	right: 190px;
+	top: 5px;
 }
 
 .site-header .search-field {
@@ -997,7 +1010,7 @@ ul.nav-menu .focus > ul,
 .entry-content,
 .entry-summary,
 .entry-meta {
-	margin: 0 auto;
+	margin: 0px 0px 0px 240px;
 	max-width: 604px;
 	width: 100%;
 }
@@ -1008,6 +1021,7 @@ ul.nav-menu .focus > ul,
 .sidebar .entry-meta {
 	max-width: 1040px;
 	padding: 0 376px 0 60px;
+	margin-top: 25px;
 }
 
 
@@ -2060,6 +2074,7 @@ footer.entry-meta {
 	max-width: 1040px;
 	padding: 30px 0;
 	width: 100%;
+	display: none;
 }
 
 .page-content {
@@ -2429,13 +2444,14 @@ footer.entry-meta {
 .site-main .widget-area {
 	float: right;
 	width: 300px;
+	margin: -40px 0px 0px 40px;
 }
 
 
 .site-main .widget-area-left {
 	float: left;
 	width: 220px;
-	margin: 40px 0px 0px -40px;
+	margin: 0px 0px 0px 40px;
 }
 
 /**
@@ -2762,7 +2778,7 @@ footer.entry-meta {
 
 	.sidebar .format-status .entry-content:before,
 	.sidebar .format-status .entry-meta:before {
-		left: 10px;
+		left: 50px;
 	}
 
 	.sidebar .format-status .entry-content p:first-child:before {
