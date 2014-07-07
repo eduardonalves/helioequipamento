@@ -1007,12 +1007,25 @@ ul.nav-menu .focus > ul,
 }
 
 .entry-header,
-.entry-content,
 .entry-summary,
 .entry-meta {
 	margin: 0px 0px 0px 240px;
 	max-width: 604px;
 	width: 100%;
+}
+
+.entry-content{
+	margin: 20px 0px 30px 410px;
+	max-width: 800px;
+	width: 800px;
+	padding: 40px;
+	background-color: #f5f5f5;
+}
+.page-description{
+	
+	margin-top: -25px;
+	margin-left: -20px;
+
 }
 
 .sidebar .entry-header,
@@ -2451,7 +2464,16 @@ footer.entry-meta {
 .site-main .widget-area-left {
 	float: left;
 	width: 220px;
-	margin: 0px 0px 0px 40px;
+	margin: 0px 0px 0px 157px;
+}
+
+.widget-area-left h3 {
+	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	margin: -19px -20px 10px !important;
+	background-color: #214478;
+	width: 220px;
+	padding-left: 5px;
+	color: #FFF;
 }
 
 /**
@@ -2460,7 +2482,7 @@ footer.entry-meta {
  */
 
 .widget {
-	background-color: rgba(247, 245, 231, 0.7);
+	background-color: #f5f5f5;
 	font-size: 14px;
 	-webkit-hyphens: auto;
 	-moz-hyphens:    auto;
@@ -2581,8 +2603,9 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: #220e10;
+	background-color: #214478;
 	padding: 20px 0;
+	border-top: 2px solid #c8b7b7;
 }
 
 .site-footer .widget-area {
