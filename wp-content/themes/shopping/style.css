@@ -547,8 +547,9 @@ img.alignright,
 
 .widget_search input.search-field {
 	width: 100%;
-	background: url(images/search.png) no-repeat center right transparent;
+	background: url(images/search.png) no-repeat center right white;
 	padding-right: 30px;
+	background-position-x: 120px;
 }
 
 .widget select {
@@ -582,6 +583,12 @@ img.alignright,
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
+	background-image: url("../shopping/images/Top-BackGround.png");
+	background-repeat: no-repeat;
+	min-height: 120px;
+	width: 100%;
+	min-width: 1600px;
+	background-size: cover;
 }
 
 .site-header > .wrap {
@@ -673,19 +680,31 @@ Site Header
 	left: auto;
 	opacity: 1;
 }
+aside.header-right.widget-area.sidebar {
+	position: absolute;
+	top: 143px;
+}
+aside.header-right.widget-area.sidebar input {
+	border: 1px solid gray;
+	box-shadow: 3px 3px 10px;
+	border-radius: 13px;
+	width: 150px;
+	height: 32px;
 
+}
 /*
 Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 .tinynav { display: none }
 
 .nav-primary {
-	background:#96588a;
-	background:-webkit-gradient(linear,left top,left bottom,from(#ad74a2),to(#96588a));
-	background:-webkit-linear-gradient(#ad74a2,#96588a);
-	background:-moz-linear-gradient(center top,#ad74a2 0,#96588a 100%);
-	background:-moz-gradient(center top,#ad74a2 0,#96588a 100%);
-	text-shadow:0 -1px 0 rgba(0,0,0,0.6);
+	background:#A0A0A0;
+	background:-webkit-gradient(linear,left top,left bottom,from(#E6E6E6),to(#A0A0A0));
+	background: -webkit-linear-gradient(#E6E6E6,#A0A0A0);
+	background:-moz-linear-gradient(center top,#E6E6E6 0,#A0A0A0 100%);
+	background:-moz-gradient(center top,#E6E6E6 0,#A0A0A0 100%);
+	
+	height: 45px;
 }
 
 .omega-nav-menu,
@@ -709,15 +728,17 @@ Site Navigation
 
 .omega-nav-menu a {
 	border: none;
-	color: #fff;
+	color: #575353;
 	display: block;
-	padding: 28px 24px;
+	padding: 15px 10px;
+	height: 45px;
 	position: relative;
 }
 
 .omega-nav-menu .current_page_item a,
 .omega-nav-menu a:hover {
-	background:#ad74a2;
+	background: gray;
+	color: white;
 }
 
 .omega-nav-menu .sub-menu,
@@ -763,13 +784,7 @@ Site Navigation
 	opacity: 1;
 }
 
-.omega-nav-menu > .first > a {
-	padding-left: 0;
-}
 
-.omega-nav-menu > .last > a {
-	padding-right: 0;
-}
 
 /*
 Content Area

@@ -120,9 +120,10 @@ function omega_footer_markup_close() {
 /**
  * Dynamic element to wrap the site title and site description. 
  */
+
 function omega_branding() {
 	echo '<div class="' . omega_apply_atomic( 'title_area_class', 'title-area') .'">';
-
+	
 	/* Get the site title.  If it's not empty, wrap it with the appropriate HTML. */	
 	if ( $title = get_bloginfo( 'name' ) ) {		
 		if ( $logo = get_theme_mod( 'custom_logo' ) )
