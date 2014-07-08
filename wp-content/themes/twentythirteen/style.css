@@ -2470,7 +2470,7 @@ footer.entry-meta {
 .widget-area-left h3 {
 	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
 	margin: -19px -20px 10px !important;
-	background-color: #214378;
+	background-color: #214478;
 	width: 220px;
 	padding-left: 5px;
 	color: #FFF;
@@ -2603,7 +2603,7 @@ footer.entry-meta {
 }
 
 .site-footer .sidebar-container {
-	background-color: #214378;
+	background-color: #214478;
 	padding: 20px 0;
 	border-top: 2px solid #c8b7b7;
 }
