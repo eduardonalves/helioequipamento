@@ -903,7 +903,11 @@ background:-webkit-gradient(linear,left top,left bottom,from(#8D8D8D),to(#838383
 
 .nav-menu .sub-menu,
 .nav-menu .children {
-	background-color: #220e10;
+	
+	background:-webkit-gradient(linear,left top,left bottom,from(#E6E6E6),to(#A0A0A0));
+	background: -webkit-linear-gradient(#E6E6E6,#A0A0A0);
+	background:-moz-linear-gradient(center top,#E6E6E6 0,#A0A0A0 100%);
+	background:-moz-gradient(center top,#E6E6E6 0,#A0A0A0 100%);
 	border: 2px solid #f7f5e7;
 	border-top: 0;
 	padding: 0;
@@ -934,10 +938,10 @@ ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover,
 ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
-	background:-webkit-gradient(linear,left top,left bottom,from(#ad74a2),to(#96588a));
-	background:-webkit-linear-gradient(#ad74a2,#96588a);
-	background:-moz-linear-gradient(center top,#ad74a2 0,#96588a 100%);
-	background:-moz-gradient(center top,#ad74a2 0,#96588a 100%);
+	background:-webkit-gradient(linear,left top,left bottom,from(#838383),to(#838383));
+	background:-webkit-linear-gradient(#838383,#838383);
+	background:-moz-linear-gradient(center top,#838383 0,#838383 100%);
+	background:-moz-gradient(center top,#838383 0,#838383 100%);
 
 }
 
@@ -1042,7 +1046,7 @@ ul.nav-menu .focus > ul,
 	
 	margin-top: -25px;
 	margin-left: -20px;
-
+	margin-bottom: 15px;
 }
 
 .sidebar .entry-header,
@@ -1052,6 +1056,7 @@ ul.nav-menu .focus > ul,
 	max-width: 1040px;
 	padding: 0 376px 0 60px;
 	margin-top: 25px;
+	
 }
 
 
@@ -2486,7 +2491,7 @@ footer.entry-meta {
 }
 
 .site-main .widget-area-left li.cat-item {
-	border-bottom: 1px dashed #5F5FD1;
+	border-bottom: 1px solid #5F5FD1;
 	margin: -5px -10px 11px !important;
 	width: 220px;
 }
@@ -2499,8 +2504,7 @@ img.attachment-shop_catalog.wp-post-image {
 .widget-area-left h3 {
 	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
 	margin: -5px -10px 11px !important;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
+	border-radius: 7px;
 	background: -moz-linear-gradient(top, #6581AD 0%, #1A355F 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6581AD), color-stop(100%,#1A355F)) !important;
 	background: -webkit-linear-gradient(top, #6581AD 0%,#1A355F 100%) !important;
