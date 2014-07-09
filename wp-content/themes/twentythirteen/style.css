@@ -843,6 +843,7 @@ img.wp-smiley,
 
 .site-header {
 	position: relative;
+	margin-top: 20px !important;
 }
 
 .site-header .home-link {
@@ -3230,6 +3231,8 @@ img.attachment-shop_catalog.wp-post-image {
 
 	.site-header {
 		background-image: none !important;
+		margin-top: 20px !important;
+
 	}
 
 	.site-header .home-link {
