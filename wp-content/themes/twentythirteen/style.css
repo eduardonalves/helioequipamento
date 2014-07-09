@@ -817,6 +817,21 @@ img.wp-smiley,
 
 
 /**
+ * Alteracpes woocommerce
+ * ----------------------------------------------------------------------------
+ */
+ 
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+	float: left !important;
+	width: 100% !important;
+	text-align: right;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals h3{
+	text-align: left;
+}
+
+/**
  * 4.0 Header
  * ----------------------------------------------------------------------------
  */
@@ -1037,8 +1052,12 @@ ul.nav-menu .focus > ul,
 	float: right;
 	max-width: 604px;
 	width: 100%;
-	margin-right: 30%;
+	margin-right: 31.5%;
+	margin-top: -25px;
+}
 
+.woocommerce{
+	margin-top: -20px;
 }
 
 .entry-content{
@@ -1080,9 +1099,7 @@ ul.nav-menu .focus > ul,
 	margin: 0 auto 10px;
 }
 
-.entry-header {
-	margin-bottom: 30px;
-}
+
 
 .entry-title {
 	font-weight: normal;
