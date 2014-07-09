@@ -602,7 +602,7 @@ input[type="reset"] {
 	background: -webkit-linear-gradient(top, #1A355F 0%, #1A355F 100%); /* Chrome 10+, Safari 5.1+ */
 	background:   linear-gradient(to bottom, #1A355F 0%, #1A355F 100%); /* W3C */
 	border: none;
-	border-bottom: 3px solid #b93207;
+	border-bottom: 3px solid #060B31;
 	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
@@ -3327,6 +3327,18 @@ img.attachment-shop_catalog.wp-post-image {
 	margin: 0px auto 20px auto;
 }
 
+.fm-form input, textarea {
+	border-radius: 10px;
+}
+
+.fm-form table input {
+	height: 30px !important;
+}
+
+.fm-form table label {
+	font-size: 15px !important;
+}
+
 .fm-form fieldset{
 	border: 1px solid transparent !important;
 }
@@ -3335,6 +3347,12 @@ img.attachment-shop_catalog.wp-post-image {
 }
 .fm-form ul{
 	margin-top: -30px !important;
+}
+
+.fm-form #fm_form_submit:hover{
+	background: #0E1727 !important;
+	border-bottom: 3px solid #3675D6 !important;
+	
 }
 
 
