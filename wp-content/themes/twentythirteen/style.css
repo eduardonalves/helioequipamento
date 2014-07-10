@@ -833,6 +833,19 @@ img.wp-smiley,
 	text-align: left;
 }
 
+.twentythirteen .woocommerce-breadcrumb {
+	padding-top: 0px !important;
+	margin-top: -26px !important;
+}
+
+div[id*="product"]{
+	
+}
+
+div[id*="product"] div.summary.entry-summary{
+	margin-right: 0px !important;
+}
+
 /**
  * 4.0 Header
  * ----------------------------------------------------------------------------
