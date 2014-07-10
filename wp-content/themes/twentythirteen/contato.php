@@ -17,7 +17,7 @@ get_template_part('headersemmenu');
 		border-left: 1px solid rgb(196, 194, 194);
 		padding: 0px 10px 0px 15px;
 		text-align: left;
-		width: 350px;
+		width: 460px;
 		height: 300px;
 		float: left;
 		margin-top: 30px;
@@ -29,7 +29,7 @@ get_template_part('headersemmenu');
 	}
 	
 	#mapaEndereco{
-		margin: 170px -21.7% 50px;
+		margin: 170px -28.7% 50px;
 		float: left;
 		z-index: 1;
 	}
@@ -59,18 +59,17 @@ get_template_part('headersemmenu');
 			<p>
 				<h5 id="empresaSpan">Contatos - Helio Equipamentos</h5>
 			
-				<span class="spanContato"><span>Tel.:</span> (21) xxxx-xxxx / (21) xxxxx-xxxx</span>
+				<span class="spanContato"><span>Tel.:</span> (21) 3474-1637 / (21) 2697-3629 / 81*89595</span>
 				<br />
-				<span class="spanContato"><span>E-mail:</span> Email@email.com </span>
+				<span class="spanContato"><span>E-mail:</span> suporte@helioequipamentos.com.br </span>
 				<br />
-				<span class="spanContato"><span>Rua:</span> Nome da Rua, nº 100 - RJ, Nova Iguaçu</span>
+				<span class="spanContato"><span>End:</span> Av. Getúlio de Moura nº 760, Centro - Nova Iguaçu | CEP: 26.221.040</span>
 				
 			
 			</p>
 			
 		</div>
-			<iframe id="mapaEndereco" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3679.0563760475998!2d-43.44269800000001!3d-22.763289000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9966febc23b75f%3A0x42deb1e90e2061a0!2sVENTO+Consulting+Ltda!5e0!3m2!1spt-BR!2sbr!4v1404936212866" width="500" height="250" frameborder="0" style="border:0"></iframe>
-
+			<iframe id="mapaEndereco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.7542444458203!2d-43.44006339999996!3d-22.764751199999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9966f94d94f153%3A0xf27e8fec90627906!2sAv.+Get%C3%BAlio+de+Moura%2C+760+-+Centro!5e0!3m2!1spt-BR!2sbr!4v1404997602299" width="500" height="250" frameborder="0" style="border:0"></iframe>
 
 		</div><!-- #content -->
 	

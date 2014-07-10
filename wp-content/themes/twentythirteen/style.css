@@ -150,7 +150,7 @@ h6 {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 30px;
 	margin: 33px 0;
 }
 
@@ -846,6 +846,42 @@ div[id*="product"] div.summary.entry-summary{
 	margin-right: 0px !important;
 }
 
+div.woocommerce{
+	margin-top: -20px;
+}
+
+div.woocommerce h2{
+	font-size: 20px;
+	
+}
+
+.woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
+	font-weight: normal;
+}
+
+.woocommerce div.product .product_title, .woocommerce #content div.product 
+.product_title, .woocommerce-page div.product .product_title, 
+.woocommerce-page #content div.product .product_title {
+	margin-top: 25px !important;
+}
+button.single_add_to_cart_button.button.alt:hover,
+input.checkout-button.button.alt.wc-forward:hover,
+input#place_order:hover{
+	background: #0E1727 !important;
+	border-top: 0px !important;
+	border-left: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 3px solid #3675D6 !important;
+}
+button.single_add_to_cart_button.button.alt, 
+input.checkout-button.button.alt.wc-forward, 
+input#place_order {
+	background: #1A355F !important;
+	border-top: 0px !important;
+	border-left: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 3px solid #0E1727 !important;
+}
 /**
  * 4.0 Header
  * ----------------------------------------------------------------------------
