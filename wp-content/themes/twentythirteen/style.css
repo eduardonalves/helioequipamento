@@ -882,6 +882,27 @@ input#place_order {
 	border-right: 0px !important;
 	border-bottom: 3px solid #0E1727 !important;
 }
+table.shop_table.cart, table.shop_table.cart thead {
+border-top-right-radius: 42px;
+border-bottom-left-radius: 42px;
+}
+
+table.shop_table.cart tr th:last-child{
+	border-top-right-radius: 42px;
+}
+table.shop_table.cart tr:last-child td:first-child{
+	border-bottom-left-radius: 42px;
+}
+table.shop_table.cart thead tr:first-child, table.shop_table.cart tr:last-child{
+	border-top-right-radius: 42px;
+	background:  rgb(40, 98, 148);
+	color: white;
+}
+
+table.shop_table.cart tr:not(:last-child):hover{
+	background: #B9D2F8;
+}
+
 /**
  * 4.0 Header
  * ----------------------------------------------------------------------------
