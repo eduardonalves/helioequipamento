@@ -1133,11 +1133,12 @@ ul.nav-menu .focus > ul,
 .entry-header,
 .entry-summary,
 .entry-meta {
-	float: right;
+	float: left;
 	max-width: 604px;
 	width: 100%;
-	margin-right: 31.5%;
 	margin-top: -25px;
+	position: absolute;
+	margin-left: 450px;
 }
 
 .entry-content{

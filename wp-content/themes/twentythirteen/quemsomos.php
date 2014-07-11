@@ -14,25 +14,30 @@ get_template_part('headersemmenu');
 ?>
 
 <style type="text/css">
-	.textoQuemSomos-top-right{
-		float: left;
-		width: 500px;
+	.somos-top{
+		margin: 0 auto;
+		display: inline-block;]
+		width: 830px;
 		margin-left: 360px;
 	}
 	
+	.textoQuemSomos-top-right{
+		width: 500px;
+		float: left;	
+	}
+	
 	.textoQuemSomos-top-left{
-		margin: 0 auto;
+		margin-left: 360px;
 		width: 815px;
 		display: block;
 		clear: both;
 	}
 	
 	.clas{		
-	float: right;
-	margin-right: 340px;
-	position: relative;
-	width: 330px;
-	margin-top: 40px;		
+		float: left;
+		position: relative;
+		width: 330px;
+		margin-top: 40px;		
 	}
 	
 	p{
@@ -44,30 +49,28 @@ get_template_part('headersemmenu');
 		<div id="content" class="site-content" role="main">
 
 		<?php the_content(); ?>
-		<div class="clas">
-			<?php 
-				echo do_shortcode('[metaslider id=129]');
-			?>
-		</div>
 		
-		<div class="textoQuemSomos-top-right">
-			
-			<h2>Quem Somos</h2>
-			<p>
+		<div class="somos-top">
+			<div class="textoQuemSomos-top-right">			
+				<h2>Quem Somos</h2>
 				<p>
-				<span>&nbsp; &nbsp; &nbsp; </span>Helio Equipamentos é uma empresa carioca, fundada em ____ na cidade de Mesquita com o objetivo de facilitar a vida do comerciante,
-				   em especial do setor de alimentos. Se você quer ser um empresário mas não sabe por onde começar, invista em alimentos e seu lucro 
-				   será garantido.
-				</p>
-				<p>
-				   <span>&nbsp; &nbsp; &nbsp; </span>Além de fornecer os equipamentos necessários para abrir o seu negócio e alavancar suas vendas, também oferecemos consultoria para quem 
-				   tem dúvidas em qual equipamento se encaixa melhor às suas necessidades. Aqui você encontra soluções para lanchonetes, pizzarias, 
-				   restaurantes, açougues, além de utensílios de cozinha industrial, comercial e doméstica.
-				</p>
-			
-			
-			</p>		
-		</div>
+					<span>&nbsp; &nbsp; &nbsp; </span>Helio Equipamentos é uma empresa carioca, fundada em ____ na cidade de Mesquita com o objetivo de facilitar a vida do comerciante,
+					   em especial do setor de alimentos. Se você quer ser um empresário mas não sabe por onde começar, invista em alimentos e seu lucro 
+					   será garantido.
+					</p>
+					<p>
+					   <span>&nbsp; &nbsp; &nbsp; </span>Além de fornecer os equipamentos necessários para abrir o seu negócio e alavancar suas vendas, também oferecemos consultoria para quem 
+					   tem dúvidas em qual equipamento se encaixa melhor às suas necessidades. Aqui você encontra soluções para lanchonetes, pizzarias, 
+					   restaurantes, açougues, além de utensílios de cozinha industrial, comercial e doméstica.
+					</p>					
+			</div>
+				
+			<div class="clas">
+				<?php 
+					echo do_shortcode('[metaslider id=129]');
+				?>
+			</div>
+		</div>	
 		
 		
 		<div class="textoQuemSomos-top-left">
