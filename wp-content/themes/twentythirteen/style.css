@@ -2627,11 +2627,9 @@ footer.entry-meta {
 }
 .site-main .widget-area-left li.cat-item:hover a {
 	
-	display:block;
 	cursor: pointer;
-	
-	font-size:14px;
-	width:100%;
+	font-size:15px;
+	width:50%;
 	height:100%;
 
 }
