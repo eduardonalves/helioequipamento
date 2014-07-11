@@ -903,6 +903,18 @@ table.shop_table.cart tr:not(:last-child):hover{
 	background: #B9D2F8;
 }
 
+table.shop_table.my_account_orders{
+	border-top-right-radius: 42px;
+}
+.shop_table.my_account_orders thead{
+	border-top-right-radius: 42px;
+	background:  rgb(40, 98, 148);
+	color: white;
+}
+.shop_table.my_account_orders thead th:last-child{
+	border-top-right-radius: 42px;
+}
+
 /**
  * 4.0 Header
  * ----------------------------------------------------------------------------
