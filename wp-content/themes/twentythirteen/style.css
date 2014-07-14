@@ -24,6 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 4.0 - Header
  *   4.1 - Site Header
  *   4.2 - Navigation
+ *   4.3 - Logo
  * 5.0 - Content
  *   5.1 - Entry Header
  *   5.2 - Entry Meta
@@ -557,6 +558,7 @@ hr {
 .site-content{
 	background-color: #f5f5f5;
 	position: initial;
+	margin-top: 10px;
 }
 
 /* Assistive text */
@@ -812,7 +814,7 @@ img.wp-smiley,
 }
 
 .site-content{
-	margin-top: -20px;
+	margin-top: 0px;
 }
 .content-area{
 	margin-top: 20px;
@@ -953,6 +955,8 @@ table.shop_table.my_account_orders{
 	width: 100%;
 }
 
+#logo_topo{margin: 50px 0px 0px 157px; left:0px; position: absolute;}
+
 .site-header .site-title:hover {
 	text-decoration: underline;
 }
@@ -994,12 +998,15 @@ div.nav-menu > ul {
 .nav-menu li {
 	display: inline-block;
 	position: relative;
-	border-left: 1px solid #A39E9E;
+	border-left: 2px solid rgba(255,255,255,0.2);
 	margin-right: -4px;
 }
 
 .nav-menu li a {
+/*
 	color: #141412;
+*/
+	color: #fff;
 	display: block;
 	font-size: 15px;
 	line-height: 1;
@@ -1011,20 +1018,32 @@ div.nav-menu > ul {
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
+/*
 background:-webkit-gradient(linear,left top,left bottom,from(#8D8D8D),to(#838383));
 	background: -webkit-linear-gradient(#8D8D8D,#838383);
 	background:-moz-linear-gradient(center top,#8D8D8D 0,#838383 100%);
 	background:-moz-gradient(center top,#8D8D8D 0,#838383 100%);
-	color: #fff;
+*/
+
+background: rgba(255,255,255,0.1);
+color: #fff;
+
 }
+
+.nav-menu .sub-menu{border-radius: 0px 0px 5px 5px; }
 
 .nav-menu .sub-menu,
 .nav-menu .children {
 	
+/*
 	background:-webkit-gradient(linear,left top,left bottom,from(#C0C0C0),to(#C0C0C0));
 	background: -webkit-linear-gradient(#C0C0C0,#A0A0A0);
 	background:-moz-linear-gradient(center top,#C0C0C0 0,#C0C0C0 100%);
 	background:-moz-gradient(center top,#C0C0C0 0,#C0C0C0 100%);
+*/
+
+background: rgba(33,68,120,1.0);
+
 	border-top: 0;
 	padding: 0;
 	position: absolute;
@@ -1048,17 +1067,19 @@ ul.nav-menu ul a,
 	color: black;
 	margin: 0;
 	width: 200px;
+	color: #fff;
 }
 
 ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover,
 ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
+/*
 	background:-webkit-gradient(linear,left top,left bottom,from(#838383),to(#838383));
 	background:-webkit-linear-gradient(#838383,#838383);
 	background:-moz-linear-gradient(center top,#838383 0,#838383 100%);
 	background:-moz-gradient(center top,#838383 0,#838383 100%);
-
+*/
 }
 
 ul.nav-menu li:hover > ul,
@@ -1077,10 +1098,14 @@ ul.nav-menu .focus > ul,
 .nav-menu .current-menu-ancestor > a {
 	color: #FFF;
 	font-style: italic;	
+/*
 	background:-webkit-gradient(linear,left top,left bottom,from(#8D8D8D),to(#838383));
 	background: -webkit-linear-gradient(#8D8D8D,#838383);
 	background:-moz-linear-gradient(center top,#8D8D8D 0,#838383 100%);
 	background:-moz-gradient(center top,#8D8D8D 0,#838383 100%);
+*/
+
+background: rgba(0,0,0,0.2);
 
 	
 }
@@ -1092,13 +1117,29 @@ ul.nav-menu .focus > ul,
 /* Navbar */
 .navbar {
 
+/*
 	background:#A0A0A0;
 	background:-webkit-gradient(linear,left top,left bottom,from(#E6E6E6),to(#A0A0A0));
 	background: -webkit-linear-gradient(#E6E6E6,#A0A0A0);
 	background:-moz-linear-gradient(center top,#E6E6E6 0,#A0A0A0 100%);
 	background:-moz-gradient(center top,#E6E6E6 0,#A0A0A0 100%);
+	*/
+	
+background: #214478; /* Old browsers */
+background: -moz-linear-gradient(top, #214478 0%, #295593 0%, #3976cc 0%, #2e60a5 52%, #2b5d9b 53%, #1c3b66 100%, #214478 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#214478), color-stop(0%,#295593), color-stop(0%,#3976cc), color-stop(52%,#2e60a5), color-stop(53%,#2b5d9b), color-stop(100%,#1c3b66), color-stop(100%,#214478)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* IE10+ */
+background: linear-gradient(to bottom, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', endColorstr='#214478',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: rgba(0,0,0,0.6) 0px 3px 8px 0px;
 	width: auto;
+/*
 	border-bottom: 1px solid #A39E9E;
+*/
+	color: #fff;
 }
 
 
@@ -2648,7 +2689,8 @@ img.attachment-shop_catalog.wp-post-image {
 }
 
 .widget-area-left h3 {
-	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+	font: 300 "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 13px !important;
 	margin: -5px -10px 11px !important;
 	border-radius: 7px;
 	
@@ -2662,10 +2704,11 @@ img.attachment-shop_catalog.wp-post-image {
 	*/
 	
 	width: 220px;
-	padding-left: 5px;
+	padding-left: 6px !important;
 	color: #FFF;
 	background-color: #214478 !important;
-	
+
+
 }
 
 .theme-bar .nivo-controlNav {
@@ -2678,6 +2721,7 @@ img.attachment-shop_catalog.wp-post-image {
 	text-align: center;
 	padding: 5px 0;
 	border-top: 1px solid #1A355F !important;
+/*
 	background: #333 !important;
 	background: -moz-linear-gradient(top, #6581AD 0%, #1A355F 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6581AD), color-stop(100%,#1A355F)) !important;
@@ -2686,12 +2730,25 @@ img.attachment-shop_catalog.wp-post-image {
 	background: -ms-linear-gradient(top, #6581AD 0%,#1A355F 100%) !important;
 	background: linear-gradient(to bottom, #6581AD 0%,#1A355F 100%) !important;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6581AD', endColorstr='#1A355F',GradientType=0 ) !important;
+*/
+
+	
+background: #214478 !important; /* Old browsers */
+background: -moz-linear-gradient(top, #214478 0%, #295593 0%, #3976cc 0%, #2e60a5 52%, #2b5d9b 53%, #1c3b66 100%, #214478 100%) !important; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#214478), color-stop(0%,#295593), color-stop(0%,#3976cc), color-stop(52%,#2e60a5), color-stop(53%,#2b5d9b), color-stop(100%,#1c3b66), color-stop(100%,#214478)) !important; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%) !important; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%) !important; /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%) !important; /* IE10+ */
+background: linear-gradient(to bottom, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%) !important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', endColorstr='#214478',GradientType=0 ) !important; /* IE6-9 */
+
 
 	-webkit-transition: all 200ms ease-in-out !important;
 	-moz-transition: all 200ms ease-in-out !important;
 	-o-transition: all 200ms ease-in-out !important;
 	transition: all 200ms ease-in-out !important;
 }
+
 
 .nivo-caption{
 	background:  #1A355F !important;
@@ -2827,6 +2884,8 @@ img.attachment-shop_catalog.wp-post-image {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	border-top: none !important;
+	box-shadow: rgba(0,0,0,0.5) 0px -5px 15px 0px;
 }
 
 .site-footer .widget-area,
@@ -3149,11 +3208,15 @@ img.attachment-shop_catalog.wp-post-image {
 		margin-left: 0;
 		padding: 0;
 		width: 100%;
+		
+		
+		
 	}
 
 	.toggled-on li,
 	.toggled-on .children {
 		display: block;
+		color: #fff;
 	}
 
 	.toggled-on .nav-menu li > ul {

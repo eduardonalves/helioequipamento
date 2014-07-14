@@ -31,12 +31,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div class="borda_content_site" style="width: 1080px; height:100%; position: absolute; z-index: 0; left: 50%; margin-left: -610px; background: rgba(0,0,0,0.3);"></div>
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 					<?php get_search_form(); ?>
+				<img id="logo_topo" src="wp-content/themes/twentythirteen/images/headers/logo_topo.png" /> 
 			</a>
 
 			<div id="navbar" class="navbar">

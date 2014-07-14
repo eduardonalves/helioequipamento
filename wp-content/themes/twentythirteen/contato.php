@@ -74,5 +74,5 @@ get_template_part('headersemmenu');
 		</div><!-- #content -->
 	
 	</div><!-- #primary -->
-<div style="clear:both;"></div>
+<div style="clear:both; height: 60px;"></div>
 <?php get_footer(); ?>
