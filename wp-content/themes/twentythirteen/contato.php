@@ -9,7 +9,9 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_template_part('headersemmenu');
+//get_template_part('headersemmenu');
+$hideSideBar = true;
+include('header.php');
 
 ?>
 <style type="text/css">

@@ -38,7 +38,7 @@
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 					<?php get_search_form(); ?>
-				<img id="logo_topo" src="wp-content/themes/twentythirteen/images/headers/logo_topo.png" /> 
+				<img id="logo_topo" src="<?php echo get_template_directory_uri(); ?>/images/headers/logo_topo.png" /> 
 			</a>
 
 			<div id="navbar" class="navbar">
@@ -51,5 +51,12 @@
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
 
+
 		<div id="main" class="site-main">
-		<?php get_sidebar( 'terceiro' ); ?>
+		<?php 
+			if($hideSideBar === true){
+				
+			}else{
+				get_sidebar('terceiro'); 
+			}			
+		?>
