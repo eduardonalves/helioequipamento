@@ -885,6 +885,11 @@ li.product{
 	}
 li.product:hover{background: rgba(170,170,170,0.2);}
 
+/*
+li.product a img{width: 300px; height: 300px;} 
+*/
+
+
 .woocommerce div.product .product_title, .woocommerce #content div.product 
 .product_title, .woocommerce-page div.product .product_title, 
 .woocommerce-page #content div.product .product_title {
