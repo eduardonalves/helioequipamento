@@ -874,11 +874,23 @@ div.woocommerce h2{
 	font-weight: normal;
 }
 
+li.product{
+	background: #ededed;
+	margin-right: 10px !important;
+	padding: 10px !important;
+	width: 170px !important;
+	height: 350px;
+	border-radius:5px;
+	box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 0px;
+	}
+li.product:hover{background: rgba(170,170,170,0.2);}
+
 .woocommerce div.product .product_title, .woocommerce #content div.product 
 .product_title, .woocommerce-page div.product .product_title, 
 .woocommerce-page #content div.product .product_title {
 	margin-top: 25px !important;
 }
+
 button.single_add_to_cart_button.button.alt:hover,
 input.checkout-button.button.alt.wc-forward:hover,
 input#place_order:hover{
@@ -897,6 +909,7 @@ input#place_order {
 	border-right: 0px !important;
 	border-bottom: 3px solid #0E1727 !important;
 }
+.product_type_simple{position: absolute !important; bottom: 10px; border-radius: 5px !important;}
 table.shop_table.cart, table.shop_table.cart thead {
 border-top-right-radius: 42px;
 border-bottom-left-radius: 42px;
@@ -1145,8 +1158,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', end
 
 .site-header .search-form {
 	position: absolute;
-	right: 190px;
-	top: 5px;
+	right: 65px;
+	top: 0px;
 }
 
 .site-header .search-field {
@@ -2711,6 +2724,26 @@ img.attachment-shop_catalog.wp-post-image {
 
 }
 
+a.nivo-control{margin-top: -9px !important;}
+a.nivo-prevNav,a.nivo-nextNav{
+	width: 20px;
+	height: 20px !important;
+	padding: 0px !important;
+	background: #fff;
+	margin-bottom: -5px !important;
+	border-radius: 10px;
+	text-align: center;
+	color:#214478 !important;
+	line-height: 21px !important;
+	text-decoration: none;
+	opacity: 0.4 !important;
+	}
+a.nivo-prevNav:hover,a.nivo-nextNav:hover{
+	opacity: 1.0 !important;
+}
+.metaslider-nivo{padding: 10px; background: #ededed; box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 0px; border: none !important; border-radius: 5px;}
+.slider-wrapper{border: none !important; }
+.slider-wrapper{box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); border-radius: 5px;}
 .theme-bar .nivo-controlNav {
 	position: absolute;
 	left: 0;

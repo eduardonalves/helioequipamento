@@ -18,7 +18,7 @@ get_template_part('headersemmenu');
 		margin: 0 auto;
 		display: inline-block;]
 		width: 830px;
-		margin-left: 360px;
+		margin-left: 158px;
 	}
 	
 	.textoQuemSomos-top-right{
@@ -27,7 +27,7 @@ get_template_part('headersemmenu');
 	}
 	
 	.textoQuemSomos-top-left{
-		margin-left: 360px;
+		margin-left: 158px;
 		width: 815px;
 		display: block;
 		clear: both;

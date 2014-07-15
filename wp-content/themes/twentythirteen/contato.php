@@ -10,8 +10,9 @@
  */
 
 //get_template_part('headersemmenu');
+
 $hideSideBar = true;
-include('header.php');
+get_header();
 
 ?>
 <style type="text/css">
