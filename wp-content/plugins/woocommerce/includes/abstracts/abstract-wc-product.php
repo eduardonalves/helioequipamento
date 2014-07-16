@@ -454,7 +454,7 @@ class WC_Product {
 	 * @return string
 	 */
 	public function single_add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $this );
+		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'Adicionar', 'woocommerce' ), $this );
 	}
 
 	/**
@@ -907,13 +907,13 @@ class WC_Product {
 
 			if ( $this->is_on_sale() && $this->get_regular_price() ) {
 
-				$price .= $this->get_price_html_from_to( $display_regular_price, __( 'Free!', 'woocommerce' ) );
+				$price .= $this->get_price_html_from_to( $display_regular_price, __( 'A Combinar!', 'woocommerce' ) );
 
 				$price = apply_filters( 'woocommerce_free_sale_price_html', $price, $this );
 
 			} else {
 
-				$price = __( 'Free!', 'woocommerce' );
+				$price = __( 'A Combinar!', 'woocommerce' );
 
 				$price = apply_filters( 'woocommerce_free_price_html', $price, $this );
 
