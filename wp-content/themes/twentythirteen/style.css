@@ -63,6 +63,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
+	font-size: 12px;
 }
 
 article,
@@ -874,12 +875,13 @@ div.woocommerce h2{
 	font-weight: normal;
 }
 
+/*container produtros - hugo*/
 li.product{
 	background: #ededed;
 	margin-right: 10px !important;
 	padding: 10px !important;
 	width: 170px !important;
-	height: 350px;
+	height: 280px;
 	border-radius:5px;
 	box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 0px;
 	}
@@ -1019,14 +1021,14 @@ div.nav-menu > ul {
 	border-left: 2px solid rgba(255,255,255,0.2);
 	margin-right: -4px;
 }
-
+/*menu - hugo*/
 .nav-menu li a {
 /*
 	color: #141412;
 */
 	color: #fff;
 	display: block;
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
@@ -1132,7 +1134,7 @@ background: rgba(0,0,0,0.2);
 	display: none;
 }
 
-/* Navbar */
+/*base menu - hugo*/
 .navbar {
 
 /*
@@ -2680,22 +2682,24 @@ footer.entry-meta {
 .site-main .widget-area-left li.cat-item:hover {
 
 	cursor: pointer;
-	background-color:#fdf9f9;
-	border-bottom: 1px solid #7F7F7F;
+	background: rgba(150,150,150,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 	margin-top:-2px;
 }
 .site-main .widget-area-left li.cat-item:hover a {
 	
 	cursor: pointer;
-	font-size:15px;
+	padding-left:7px;
 	width:50%;
 	height:100%;
+	transition-duration: 0.5s;
 
 }
 
 .site-main .widget-area-left li.cat-item:last-child {
 
 	border-bottom: 5px solid #214478 !important;
+	height: 35px !important;
 	border-bottom-left-radius:3px;
 	border-bottom-right-radius:3px;
 }
@@ -2706,10 +2710,11 @@ img.attachment-shop_catalog.wp-post-image {
 	height: 159px !important;
 }
 
+/*categorias - hugo*/
 .widget-area-left h3 {
 	font: 300 "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 13px !important;
-	margin: -5px -10px 11px !important;
+	font-size: 10px !important;
+	margin: 0px -10px !important;
 	border-radius: 7px;
 	
 	/*
@@ -2722,9 +2727,23 @@ img.attachment-shop_catalog.wp-post-image {
 	*/
 	
 	width: 220px;
+	height: 30px;
+	line-height: 23px;
 	padding-left: 6px !important;
 	color: #FFF;
+/*
 	background-color: #214478 !important;
+*/
+
+background: #214478; /* Old browsers */
+background: -moz-linear-gradient(top, #214478 0%, #295593 0%, #3976cc 0%, #2e60a5 52%, #2b5d9b 53%, #1c3b66 100%, #214478 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#214478), color-stop(0%,#295593), color-stop(0%,#3976cc), color-stop(52%,#2e60a5), color-stop(53%,#2b5d9b), color-stop(100%,#1c3b66), color-stop(100%,#214478)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* IE10+ */
+background: linear-gradient(to bottom, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', endColorstr='#214478',GradientType=0 ); /* IE6-9 */
+
 
 
 }
@@ -2850,7 +2869,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', end
 }
 
 .widget a:hover {
-	color: #71c837;
 	text-decoration: none;
 }
 
@@ -3602,8 +3620,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', end
 
 
 
+/*edições hugo*/
 
+.product-categories li{width: 200px; height: 30px; background: rgba(150,150,150,0.1); border-radius: 5px; display: block;}
 
+.product-categories li a{width: 140px !important; height: 100% !important; display: inline-block;}
 
 
 
