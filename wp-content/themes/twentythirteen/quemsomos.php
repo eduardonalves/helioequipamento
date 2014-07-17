@@ -16,29 +16,12 @@ get_template_part('headersemmenu');
 <style type="text/css">
 	.somos-top{
 		margin: 0 auto;
-		display: inline-block;]
-		width: 830px;
-		margin-left: 158px;
+		padding-bottom: 35px;
+		width: 700px;
+		
 	}
 	
-	.textoQuemSomos-top-right{
-		width: 500px;
-		float: left;	
-	}
-	
-	.textoQuemSomos-top-left{
-		margin-left: 158px;
-		width: 815px;
-		display: block;
-		clear: both;
-	}
-	
-	.clas{		
-		float: left;
-		position: relative;
-		width: 330px;
-		margin-top: 40px;		
-	}
+
 	
 	p{
 		text-align: justify;
@@ -51,7 +34,7 @@ get_template_part('headersemmenu');
 		<?php the_content(); ?>
 		
 		<div class="somos-top">
-			<div class="textoQuemSomos-top-right">			
+					
 				<h2>Quem Somos</h2>
 				<p>
 					<span>&nbsp; &nbsp; &nbsp; </span>Helio Equipamentos é uma empresa carioca, fundada em ____ na cidade de Mesquita com o objetivo de facilitar a vida do comerciante,
@@ -63,17 +46,7 @@ get_template_part('headersemmenu');
 					   tem dúvidas em qual equipamento se encaixa melhor às suas necessidades. Aqui você encontra soluções para lanchonetes, pizzarias, 
 					   restaurantes, açougues, além de utensílios de cozinha industrial, comercial e doméstica.
 					</p>					
-			</div>
-				
-			<div class="clas">
-				<?php 
-					echo do_shortcode('[metaslider id=129]');
-				?>
-			</div>
-		</div>	
-		
-		
-		<div class="textoQuemSomos-top-left">
+
 				<p>
 					<span>&nbsp; &nbsp; &nbsp; </span> Nossa diferença em relação à concorrência é que não vendemos equipamentos que ultrapassam as necessidades, pesam no bolso consumidor e 
 					ainda dificultam a decolagem de seu negócio. Oferecermos por um preço acessível, máquinas que serão 100% úteis para alcançar os objetivos 

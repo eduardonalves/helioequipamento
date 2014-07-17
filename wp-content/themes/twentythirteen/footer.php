@@ -22,30 +22,38 @@
 	.empresa{
 		float: left;
 		text-align: left;
-		margin-left: 150px;
+	}
+	
+	.creditos{
+		float: right;
+		position: relative;
 	}
 
 </style>
-
+	 </div>
 	</div><!-- #main -->
 		<footer id="colophon" class="site-footer foot" role="contentinfo">
 			<?php //get_sidebar( 'main' ); ?>
-			<div class="empresa">
-				<span class="spanContato"><span>Tel.:</span> (21) 3474-1637 / (21) 2697-3629 / 81*89595</span>
+			<div class="centralFooter">
+				<div class="empresa">
+					<span class="spanContato"><span>Tel.:</span> (21) 3474-1637 / (21) 2697-3629 / 81*89595</span>
+					<br />
+					<span class="spanContato"><span>E-mail:</span> suporte@helioequipamentos.com.br </span>
+					<br />
+					<span class="spanContato"><span>End:</span> Av. Getúlio de Moura nº 760, Centro - Nova Iguaçu | CEP: 26.221.040</span>
+					<br />
+				</div>
 				<br />
-				<span class="spanContato"><span>E-mail:</span> suporte@helioequipamentos.com.br </span>
 				<br />
-				<span class="spanContato"><span>End:</span> Av. Getúlio de Moura nº 760, Centro - Nova Iguaçu | CEP: 26.221.040</span>
-				<br />
+				<span class="creditos">​© 2014. Site desenvolvido por TechinMOVE</span>
 			</div>
-			<br />
-			<br />
-			<span class="spanContato">​© 2014. Site desenvolvido por TechinMOVE</span>
 		<br />
 		</footer><!-- #colophon -->
 		
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
+	
+
 </body>
 </html>

@@ -63,7 +63,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 article,
@@ -814,7 +814,7 @@ img.wp-smiley,
 .site-main {
 	position: relative;
 	padding-bottom: 30px;
-	
+	overflow-x: auto;	
 }
 
 .site-content{
@@ -867,6 +867,7 @@ div[id*="product"] div.summary.entry-summary{
 
 div.woocommerce{
 	margin-top: -20px;
+	display: inline-block;
 }
 
 div.woocommerce h2{
@@ -884,7 +885,7 @@ li.product{
 	margin-right: 10px !important;
 	padding: 10px !important;
 	width: 170px !important;
-	height: 280px;
+	height: 315px;
 	border-radius:5px;
 	box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 0px;
 	}
@@ -977,7 +978,10 @@ table.shop_table.my_account_orders{
 	width: 100%;
 }
 
-#logo_topo{margin: 50px 0px 0px 157px; left:0px; position: absolute;}
+#logo_topo{
+	float: left;
+	margin: 40px -20px 0px;
+}
 
 .site-header .site-title:hover {
 	text-decoration: underline;
@@ -1004,7 +1008,6 @@ table.shop_table.my_account_orders{
 
 .main-navigation {
 	clear: both;
-	margin-left: 157px;
 	max-width: 1080px;
 	min-height: 45px;
 	position: relative;
@@ -1030,7 +1033,7 @@ div.nav-menu > ul {
 */
 	color: #fff;
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1;
 	padding: 15px 20px;
 	text-decoration: none;
@@ -1167,7 +1170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', end
 
 .site-header .search-form {
 	position: absolute;
-	right: 65px;
+	right: 35px;
 	top: 0px;
 }
 
@@ -1213,12 +1216,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', end
 	max-width: 604px;
 	width: 100%;
 	margin-top: -25px;
-	position: absolute;
-	margin-left: 450px;
+
 }
 
 .entry-content{
-	margin: 20px 0px 30px 410px;
+	margin: 20px 0px 30px 230px;
 	max-width: 800px;
 	width: 800px;
 	padding: 40px;
@@ -2360,7 +2362,7 @@ footer.entry-meta {
 .comment-respond .comment-form,
 .comment-respond iframe {
 	display: block;
-	margin-left: auto;
+	margin-top: 10px;
 	margin-right: auto;
 	max-width: 604px;
 	width: 100%;
@@ -2666,8 +2668,6 @@ footer.entry-meta {
 .site-main .widget-area-left {
 	float: left;
 	width: 256px;
-	margin: 0px 0px 0px 157px;
-	
 }
 
 .site-main .widget-area-left li.cat-item {
@@ -3624,7 +3624,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', end
 /*edições hugo*/
 
 nav.woocommerce-breadcrumb{
-	display: inline-block !important;
+	max-height: 10px;
 	}
 .woocommerce-result-count{
 	padding-right: 20px;
@@ -3702,5 +3702,78 @@ select.orderby{margin-right: 29px;}
 .product_type_simple{position: absolute !important; bottom: 10px; border-radius: 5px !important;}
 .product_type_simple:active{ height: 25px !important; position: relative !important; bottom: 10px !important;}
 
+/*
 ul.products li a div.star-rating{position: absolute !important; margin-top: -65px !important; margin-left: 0px !important; border-top-right-radius: 5px;
 background: #EFEFEF; width: 70px !important; height: 15px !important;}
+*/
+
+
+
+
+
+.woocommerce-tabs{
+	max-width: 720px;
+}
+
+.woocommerce-tabs h2{
+	font-size: 20px;
+	max-width: 700px;
+}
+
+.commentlist{
+	padding-left: 0px;
+}	
+
+
+.comment_container{
+	max-width: 700px;
+}
+
+
+
+
+
+
+/*
+ * Centralizão dos Elementos do Tema, para ajustar  
+ * com a reajuste do tamanho do navegador 
+ * 
+*/
+
+.centralTopo{
+	margin: 0 auto;
+	max-width: 1000px;
+
+
+}
+
+.centralMenu{
+	margin: 0 auto;
+	max-width: 1000px;
+
+}
+
+
+.centralContent{
+
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.centralFooter{
+
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

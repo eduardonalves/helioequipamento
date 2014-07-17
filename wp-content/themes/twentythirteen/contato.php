@@ -27,7 +27,7 @@ get_header();
 	}
 	
 	#divForm{
-		margin-left: 105px;
+	
 		float: left;
 	}
 	
