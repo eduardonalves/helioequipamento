@@ -919,7 +919,6 @@ input#place_order {
 	border-right: 0px !important;
 	border-bottom: 3px solid #0E1727 !important;
 }
-.product_type_simple{position: absolute !important; bottom: 10px; border-radius: 5px !important;}
 table.shop_table.cart, table.shop_table.cart thead {
 border-top-right-radius: 42px;
 border-bottom-left-radius: 42px;
@@ -3670,11 +3669,17 @@ select.orderby{margin-right: 29px;}
 .product-categories li ul li{
 	width: 200px !important;
 	margin-top: 5px !important;
-	background: rgba(255,255,255,0.7) !important;
+	background: #ebebeb !important;
 	}
 .product-categories li ul li:hover{
 	background: rgba(255,255,255,1.0) !important;
 	}
+	/*menu categoria atual*/
+	li.current-cat.cat-parent, li.current-cat-parent{background: rgba(0,10,130,0.1) !important; font-weight: bold;}
+	li.current-cat.cat-parent > a:before, li.current-cat-parent > a:before{content: url(images/headers/seta_baixo.png);}
+	li.current-cat.cat-parent li, .current-cat-parent li{ font-weight: normal;}
+	ul.children .current-cat a{ font-weight: bold;}
+	li.cat-item.current-cat:hover a,.current-cat-parent:hover ul.children li.cat-item a,.current-cat-parent:hover a{padding-left: 0px !important;}
 
 #content nav.woocommerce-pagination{
 	clear: left !important;
@@ -3685,6 +3690,18 @@ select.orderby{margin-right: 29px;}
 	top: 40px !important; left: -77px;
 	}
 	
-	.current-cat{background: rgba(0,10,130,0.1) !important; font-weight: bold;}
-	.current-cat a:before{content: url(images/headers/seta_baixo.png);}
-	.current-cat li{ font-weight: normal;}
+	
+
+.woocommerce-tabs,{
+	float: left !important; clear: none !important;
+}
+.products{ }
+/*bt ver carrinho*/
+.added_to_cart{width: 10px !important; display: block !important; margin-left: 75px !important; margin-top: -30px !important;}
+
+/*bt adicionar ao carrinho*/
+.product_type_simple{position: absolute !important; bottom: 10px; border-radius: 5px !important;}
+.product_type_simple:active{ height: 25px !important; position: relative !important; bottom: 10px !important;}
+
+.star-rating{position: absolute !important; margin-top: -65px !important; margin-left: 0px !important; border-top-right-radius: 5px;
+background: #EFEFEF; width: 70px !important; height: 15px !important;}
