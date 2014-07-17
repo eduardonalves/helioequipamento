@@ -3702,5 +3702,5 @@ select.orderby{margin-right: 29px;}
 .product_type_simple{position: absolute !important; bottom: 10px; border-radius: 5px !important;}
 .product_type_simple:active{ height: 25px !important; position: relative !important; bottom: 10px !important;}
 
-.star-rating{position: absolute !important; margin-top: -65px !important; margin-left: 0px !important; border-top-right-radius: 5px;
+ul.products li a div.star-rating{position: absolute !important; margin-top: -65px !important; margin-left: 0px !important; border-top-right-radius: 5px;
 background: #EFEFEF; width: 70px !important; height: 15px !important;}
