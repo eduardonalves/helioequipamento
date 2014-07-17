@@ -3692,10 +3692,9 @@ select.orderby{margin-right: 29px;}
 	
 	
 
-.woocommerce-tabs,{
+.woocommerce-tabs{
 	float: left !important; clear: none !important;
 }
-.products{ }
 /*bt ver carrinho*/
 .added_to_cart{width: 10px !important; display: block !important; margin-left: 75px !important; margin-top: -30px !important;}
 
