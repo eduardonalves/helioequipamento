@@ -3687,7 +3687,7 @@ select.orderby{margin-right: 29px;}
 
 .woocommerce-info{
 	display: inline-block !important;
-	top: 40px !important; left: -77px;
+
 	}
 	
 	
@@ -3696,16 +3696,12 @@ select.orderby{margin-right: 29px;}
 	float: left !important; clear: none !important;
 }
 /*bt ver carrinho*/
-.added_to_cart{width: 10px !important; display: block !important; margin-left: 75px !important; margin-top: -30px !important;}
+.added_to_cart{width: 10px !important; display: block !important; margin-left: 75px !important; margin-top: -32px !important;}
 
 /*bt adicionar ao carrinho*/
 .product_type_simple{position: absolute !important; bottom: 10px; border-radius: 5px !important;}
-.product_type_simple:active{ height: 25px !important; position: relative !important; bottom: 10px !important;}
+.product_type_simple:active{ height: 25px !important; position: absolute !important; top: 276px !important; clear:both !important;}
 
-/*
-ul.products li a div.star-rating{position: absolute !important; margin-top: -65px !important; margin-left: 0px !important; border-top-right-radius: 5px;
-background: #EFEFEF; width: 70px !important; height: 15px !important;}
-*/
 
 
 
@@ -3730,10 +3726,33 @@ background: #EFEFEF; width: 70px !important; height: 15px !important;}
 }
 
 
+/*
+ * Alterações Finalizar COmpra woocommerce
+ * 
+*/
+.addresses{
+	display: none;
+}
 
 
 
+/*
+ * Alterações Carrinho woocommerce
+ * 
+*/
+.woocommerce table.shop_table, .woocommerce-page table.shop_table{
+  min-width: 100%;
+    text-align: left;
+    width: auto;
+}
+.product-price, .product-subtotal, .cart-collaterals, .product-total, .shop_table tfoot{
+	display: none;
+}
 
+th.product-quantity{
+	border-top-right-radius: 35px !important;
+	width: 110px;
+}
 /*
  * Centralizão dos Elementos do Tema, para ajustar  
  * com a reajuste do tamanho do navegador 

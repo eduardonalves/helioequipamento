@@ -13,7 +13,7 @@ global $woocommerce;
 
 $order = new WC_Order( $order_id );
 ?>
-<h2><?php _e( 'Order Details', 'woocommerce' ); ?></h2>
+<h2><?php _e( 'Detalhes do Orçamento', 'woocommerce' ); ?></h2>
 <table class="shop_table order_details">
 	<thead>
 		<tr>

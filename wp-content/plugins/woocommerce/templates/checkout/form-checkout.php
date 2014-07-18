@@ -48,7 +48,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
-		<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
+		<h3 id="order_review_heading"><?php _e( 'Seu Orçamento', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 

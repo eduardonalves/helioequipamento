@@ -92,7 +92,7 @@
 		$('.add_to_cart_button').text("Adicionar");
 		$('.add_to_cart_button').html("Adicionar");
 		$('.checkout-button').val("Finalizar Orçamento");
-		$('.form-row input[type="submit"]').val("Finalizar Orçamento");
+		//$('.form-row input[type="submit"]').val("Finalizar Orçamento");
 	});
 	
 } )( jQuery );

@@ -21,7 +21,8 @@ wc_print_notices(); ?>
 		wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) )
 	);
 
-	printf( __( 'From your account dashboard you can view your recent orders, manage your shipping and billing addresses and <a href="%s">edit your password and account details</a>.', 'woocommerce' ),
+	//printf( __( 'From your account dashboard you can view your recent orders, manage your shipping and billing addresses and <a href="%s">edit your password and account details</a>.', 'woocommerce' ),
+	printf( __( 'No painel da sua conta você pode ver seus orçamentos recentes, gerenciar seus endereços e <a href="%s">Editar sua senha e detalhes da conta</a>.', 'woocommerce' ),
 		wc_customer_edit_account_url()
 	);
 	?>

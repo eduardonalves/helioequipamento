@@ -15,13 +15,14 @@ if ( $order ) : ?>
 
 	<?php if ( in_array( $order->status, array( 'failed' ) ) ) : ?>
 
-		<p><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction.', 'woocommerce' ); ?></p>
+		<p><?php _e( 'Infelizmente, o seu Orçamento não pode ser processado.', 'woocommerce' ); ?></p>
+		<?php //<p>_e( 'Unfortunately your orçamento cannot be processed as the originating bank/merchant has declined your transaction.', 'woocommerce' );</p> ?>
 
 		<p><?php
 			if ( is_user_logged_in() )
-				_e( 'Please attempt your purchase again or go to your account page.', 'woocommerce' );
+				_e( 'Por favor, tente seu orçamento novamente ou vá para a página da sua conta.', 'woocommerce' );
 			else
-				_e( 'Please attempt your purchase again.', 'woocommerce' );
+				_e( 'Por favor, tente seu orçamento novamente.', 'woocommerce' );
 		?></p>
 
 		<p>
@@ -33,26 +34,29 @@ if ( $order ) : ?>
 
 	<?php else : ?>
 
-		<p><?php _e( 'Thank you. Your order has been received.', 'woocommerce' ); ?></p>
+		<p><?php _e( 'Obrigado, Seu Orçamento foi Recebido.', 'woocommerce' ); ?></p>
 
 		<ul class="order_details">
 			<li class="order">
-				<?php _e( 'Order:', 'woocommerce' ); ?>
+				<?php _e( 'Orçamento:', 'woocommerce' ); ?>
 				<strong><?php echo $order->get_order_number(); ?></strong>
 			</li>
 			<li class="date">
 				<?php _e( 'Date:', 'woocommerce' ); ?>
 				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
 			</li>
+			<?php/*
 			<li class="total">
-				<?php _e( 'Total:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_formatted_order_total(); ?></strong>
+				<?php/* _e( 'Total:', 'woocommerce' ); ?>
+				<strong><?php //echo $order->get_formatted_order_total(); ?></strong>
 			</li>
+			* *  */?>
 			<?php if ( $order->payment_method_title ) : ?>
 			<li class="method">
 				<?php _e( 'Payment method:', 'woocommerce' ); ?>
 				<strong><?php echo $order->payment_method_title; ?></strong>
 			</li>
+			
 			<?php endif; ?>
 		</ul>
 		<div class="clear"></div>
@@ -64,6 +68,6 @@ if ( $order ) : ?>
 
 <?php else : ?>
 
-	<p><?php _e( 'Thank you. Your order has been received.', 'woocommerce' ); ?></p>
+	<p><?php _e( 'Obrigado, Seu Orçamento foi Recebido.', 'woocommerce' ); ?></p>
 
 <?php endif; ?>
