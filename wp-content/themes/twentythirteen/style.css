@@ -3785,6 +3785,10 @@ th.product-quantity{
 	max-width: 1000px;
 }
 
+.product .images{
+	width: 250px !important;
+	height: 250px !important;
+}
 
 
 
