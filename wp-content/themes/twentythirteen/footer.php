@@ -27,6 +27,10 @@
 	.creditos{
 		float: right;
 		position: relative;
+		font-size: 16px;
+	}
+	.creditos a{
+		font-size: 16px;
 	}
 
 </style>
@@ -45,7 +49,7 @@
 				</div>
 				<br />
 				<br />
-				<span class="creditos">​© 2014. Site desenvolvido por TechinMOVE</span>
+				<span class="creditos">​© 2014. Site desenvolvido por <a href="http://www.techinmove.com.br/">TechInMOVE</a></span>
 			</div>
 		<br />
 		</footer><!-- #colophon -->
