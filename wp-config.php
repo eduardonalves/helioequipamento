@@ -22,7 +22,7 @@ define('DB_NAME', 'equipamento');
 define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'vento');
+define('DB_PASSWORD', 'root');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
