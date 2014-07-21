@@ -980,7 +980,7 @@ table.shop_table.my_account_orders{
 
 #logo_topo{
 	float: left;
-	margin: 40px -20px 0px;
+	margin: 40px -30px 0px;
 }
 
 .site-header .site-title:hover {
@@ -3851,6 +3851,7 @@ article[id*="post-"] .entry-title{
 	float: left;
 	display: block;
 	margin-bottom: 80px;
+	min-height: 400px;
 }
 .resultados_search{
 /*
