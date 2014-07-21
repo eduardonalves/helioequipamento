@@ -67,18 +67,4 @@
 				get_sidebar('terceiro'); 
 			}			
 		?>
-		<script>
-			window.onload = function(){
-				var elemento = document.getElementsByClassName("product");
-				
-				if(elemento.length == 1){
 
-					elemento[0].style.marginTop = "30px";
-					elemento[0].style.marginLeft = "-161px";
-					
-					
-				}
-				
-			};				
-			
-		</script>

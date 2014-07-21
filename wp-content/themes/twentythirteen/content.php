@@ -42,7 +42,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-
+	
 	<footer class="entry-meta">
 		<?php if ( comments_open() && ! is_single() ) : ?>
 			<div class="comments-link">
@@ -55,3 +55,18 @@
 		<?php endif; ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post -->
+	<script>
+
+/*
+			window.onload = function(){
+				var elemento = document.getElementsByClassName("product");
+				
+				if(elemento.length == 1){
+
+					elemento[0].style.marginTop = "30px";
+					elemento[0].style.marginLeft = "-161px";
+
+				}				
+			};				
+*/
+		</script>

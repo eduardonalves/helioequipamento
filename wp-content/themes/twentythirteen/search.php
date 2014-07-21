@@ -22,18 +22,15 @@ get_header(); ?>
 						<?php /* The loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php get_template_part( 'content', get_post_format() ); ?>
-						<?php endwhile; ?>
-		
-
-						
-					</div>
-					<div class="resultados_navegacao">
-						<?php twentythirteen_paging_nav(); ?>
+						<?php endwhile; ?>						
 					</div>
 					
-					<?php else : ?>
+					<div class="resultados_navegacao">
+						<?php twentythirteen_paging_nav(); ?>
+						<?php else : ?>
 							<?php get_template_part( 'content', 'none' ); ?>
 					<?php endif; ?>
+					</div>					
 				</div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
