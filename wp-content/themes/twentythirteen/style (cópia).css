@@ -1230,7 +1230,7 @@ position: relative;
 .page-description{
 	
 	margin-top: -25px;
-
+	margin-left: -20px;
 	margin-bottom: 15px;
 }
 
@@ -3654,6 +3654,7 @@ nav.woocommerce-breadcrumb{
 	margin-top: 4px;
 }
 ul.products{
+	margin-left: -20px !important; 
 	position: relative !important;
 	clear: none !important;
 	float: left !important;
@@ -3872,14 +3873,14 @@ display: block;
 	top: 20px;
 }
 
+.centralAjuste{
+	margin-left: 10px;
+}
 
 
-
-/*
 .centralAjuste .woocommerce-result-count{
 	margin-left: -20px;
 }
-*/
 
 .centralAjuste .woocommerce-ordering{
 	margin-top: -35px;
@@ -3898,8 +3899,4 @@ display: block;
 margin-top: -42px;
 height: 43px;
 padding-top: 10px;
-}
-
-.related.products{
-float: left;
 }

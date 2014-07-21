@@ -50,8 +50,15 @@
 						<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
 						<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-						<?php get_search_form(); ?>
-					</nav><!-- #site-navigation -->
+						
+						<div class="telMenu">
+							<span style="float:left;margin-right: 10px;">Tel.: (21) 3474-1637 / (21) 2697-3629 / 81*89595 </span>
+							<?php get_search_form(); ?>
+						</div>
+						
+						
+					
+					</nav><!-- #site-navigation -->	
 				</div>
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->

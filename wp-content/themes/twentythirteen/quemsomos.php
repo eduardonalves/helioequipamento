@@ -16,7 +16,7 @@ get_template_part('headersemmenu');
 <style type="text/css">
 	.somos-top{
 		margin: 0 auto;
-		padding-bottom: 35px;
+		padding-bottom: 42px;
 		width: 700px;
 		
 	}
@@ -65,5 +65,6 @@ get_template_part('headersemmenu');
 	</div><!-- #primary -->
 
 <div style="clear:both;"></div>
+
 
 <?php get_footer(); ?>

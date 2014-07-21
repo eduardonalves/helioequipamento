@@ -17,6 +17,7 @@
 		border-top: 2px solid #030820;
 		color: white;
 		margin-top: 46px;
+		text-decoration:none;
 	}
 	
 	.empresa{
@@ -28,9 +29,16 @@
 		float: right;
 		position: relative;
 		font-size: 16px;
+		font-family: serif;
+		text-decoration:none;
 	}
 	.creditos a{
 		font-size: 16px;
+		color:#85ad74;
+	}
+	.creditos a:hover{
+		
+		color:#51CC1C;
 	}
 
 </style>
