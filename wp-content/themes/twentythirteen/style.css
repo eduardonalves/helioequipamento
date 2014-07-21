@@ -980,7 +980,7 @@ table.shop_table.my_account_orders{
 
 #logo_topo{
 	float: left;
-	margin: 40px -20px 0px;
+	margin: 40px -30px 0px;
 }
 
 .site-header .site-title:hover {
@@ -2107,29 +2107,37 @@ footer.entry-meta {
 
 .navigation .nav-previous {
 	float: left;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: rgb(223, 223, 223);
+	padding-right: 10px;
 }
 
 .navigation .nav-next {
 	float: right;
+	padding-left: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: rgb(223, 223, 223);
+
+
 }
 
 .navigation a {
-	color: #bc360a;
+	color: #000000;
 }
 
 .navigation a:hover {
-	color: #ea9629;
+	color: #707070;
 	text-decoration: none;
 }
 
 .paging-navigation {
-	background-color: #e8e5ce;
-	padding: 40px 0;
+	height: 40px;
 }
 
 .paging-navigation .nav-links {
-	margin: 0 auto;
-	max-width: 604px;
+
 	width: 100%;
 }
 
@@ -2139,39 +2147,50 @@ footer.entry-meta {
 }
 
 .paging-navigation .nav-next {
-	padding: 13px 0;
+		
 }
 
 .paging-navigation a {
-	font-size: 22px;
+	font-size: 20px;
 	font-style: italic;
+/*
 	font-weight: 300;
+*/
 }
 
 .paging-navigation .meta-nav {
-	background-color: #e63f2a;
-	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
 	font-size: 26px;
-	padding: 3px 0 8px;
 	text-align: center;
-	width: 50px;
+	width: 70px;
+		
+	background: #214478; /* Old browsers */
+	background: -moz-linear-gradient(top, #214478 0%, #295593 0%, #3976cc 0%, #2e60a5 52%, #2b5d9b 53%, #1c3b66 100%, #214478 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#214478), color-stop(0%,#295593), color-stop(0%,#3976cc), color-stop(52%,#2e60a5), color-stop(53%,#2b5d9b), color-stop(100%,#1c3b66), color-stop(100%,#214478)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #214478 0%,#295593 0%,#3976cc 0%,#2e60a5 52%,#2b5d9b 53%,#1c3b66 100%,#214478 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214478', endColorstr='#214478',GradientType=0 ); /* IE6-9 */
 }
 
 .paging-navigation .nav-previous .meta-nav {
 	margin-right: 10px;
-	padding: 17px 0 23px;
-	width: 80px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 }
+
 
 .paging-navigation .nav-next .meta-nav {
 	margin-left: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .paging-navigation a:hover .meta-nav {
-	background-color: #ea9629;
 	text-decoration: none;
+	background: #1A355F; /* Old browsers */
 }
 
 .post-navigation {
@@ -3785,14 +3804,71 @@ th.product-quantity{
 	max-width: 1000px;
 }
 
+.product .images{
+	width: 250px !important;
+	height: 250px !important;
+}
 
 
+article[id*="post-"]{
+	float: left;
+	width: 160px;
+	margin-right: 10px;
+	margin-top: 20px;
+	padding: 5px;
+	height: 320px;
+	background: #ededed;
+	border-radius: 5px;
+box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 0px;
+}
 
+article[id*="post-"]:hover{background: rgba(170,170,170,0.2);}
 
+article[id*="post-"] img{
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+}
 
+article[id*="post-"] a{
+	color: #1A355F;
+}
 
+article[id*="post-"] a:hover{
+	color: #71c837;
+}
 
+article[id*="post-"] .entry-header, .entry-summary, .entry-meta{
+	margin-top: 0px !important;
+	
+}
 
+article[id*="post-"] .entry-title{
+	font-size:13px;
+}
 
+.resultados_lado{
+	width: 700px;
+	float: left;
+	display: block;
+	margin-bottom: 80px;
+	min-height: 400px;
+}
+.resultados_search{
+/*
+	width: 700px;
+	float: left;
+*/
+	position: relative;
+display: block;
+}
+.resultados_navegacao{
+	clear:both;
+	display: block;
+	position: relative;
+	bottom: 0px;
+	max-height: 40px;
+	width: 700px;
+	top: 20px;
+}
 
 
