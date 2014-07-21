@@ -29,7 +29,11 @@ function cd_fbsp_print_script()
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
+<<<<<<< HEAD
       js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+=======
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+>>>>>>> Henrique
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <?php
