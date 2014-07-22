@@ -37,7 +37,6 @@
 				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-						<?php get_search_form(); ?>
 					<img id="logo_topo" src="<?php echo get_template_directory_uri(); ?>/images/headers/logo_topo.png" /> 
 				</a>
 			</div>
@@ -48,7 +47,13 @@
 						<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
 						<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
+						
+						<div class="telMenu">
+							<span style="float:left;margin-right: 10px;">Tel.: (21) 3474-1637 / (21) 2697-3629 / 81*89595 </span>
+							<?php get_search_form(); ?>
+						</div>
+
+					</nav><!-- #site-navigation -->	
 				</div>
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->

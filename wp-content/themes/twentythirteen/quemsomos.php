@@ -16,7 +16,7 @@ get_template_part('headersemmenu');
 <style type="text/css">
 	.somos-top{
 		margin: 0 auto;
-		padding-bottom: 42px;
+		padding-bottom: 45px;
 		width: 700px;
 		
 	}
